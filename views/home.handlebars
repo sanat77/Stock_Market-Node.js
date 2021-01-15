@@ -1,0 +1,35 @@
+{{#if error}} There was an error... {{/if}}
+<br>
+<div class="jumbotron">
+  <h1 class="display-4">{{stock.companyName}}  ({{stock.symbol}})</h1><br>
+      <strong>Latest Price: </strong>${{stock.latestPrice}}<br>
+      <strong>Latest Time: </strong>{{stock.latestTime}}<br>
+      <strong>Previous Close: </strong>${{stock.previousClose}}<br>
+      <strong>Change Percent: </strong>{{stock.changePercent}}<br>
+      <strong>Market Cap: </strong>${{stock.marketCap}}<br>
+      <strong>Year to Date Change: </strong>{{stock.ytdChange}}<br>
+      <strong>Low: </strong>${{stock.week52Low}}<br>
+      <strong>High: </strong>${{stock.week52High}}<br>
+</div>
+
+
+<!--
+
+<h1>{{stock.companyName}}  ({{stock.symbol}})</h1>
+<br><br>
+<strong>Latest Price: </strong>${{stock.latestPrice}}<br>
+<strong>Latest Time: </strong>{{stock.latestTime}}<br>
+<strong>Previous Close: </strong>${{stock.previousClose}}<br>
+<strong>Change Percent: </strong>{{stock.changePercent}}<br>
+<strong>Market Cap: </strong>${{stock.marketCap}}<br>
+<strong>Year to Date Change: </strong>{{stock.ytdChange}}<br>
+<strong>Low: </strong>${{stock.week52Low}}<br>
+<strong>High: </strong>${{stock.week52High}}<br>
+-->
+
+<!--
+
+{{#each stock}}
+    {{@key}} | {{this}} <br>
+{{/each}}
+-->
